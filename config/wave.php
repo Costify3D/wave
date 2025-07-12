@@ -16,10 +16,10 @@ return [
     ],
 
     'auth' => [
-        'min_password_length' => 5,
+        'min_password_length' => 12,
     ],
 
-    'primary_color' => '#000000',
+    'primary_color' => '#f28c28',
 
     'user_model' => \App\Models\User::class,
     'show_docs' => env('WAVE_DOCS', true),
