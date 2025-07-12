@@ -7,6 +7,7 @@ const themeFilePath = path.resolve(__dirname, 'theme.json');
 const activeTheme = fs.existsSync(themeFilePath) ? JSON.parse(fs.readFileSync(themeFilePath, 'utf8')).name : 'anchor';
 console.log(`Active theme: ${activeTheme}`);
 
+
 export default defineConfig({
     plugins: [
         laravel({

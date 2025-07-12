@@ -1,0 +1,1 @@
+<p><strong>Admin</strong></p><?php /**PATH C:\laragon\www\costify3d\wave\src/../resources/views/admin/logo.blade.php ENDPATH**/ ?>

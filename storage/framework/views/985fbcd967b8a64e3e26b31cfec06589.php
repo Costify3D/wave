@@ -1,0 +1,25 @@
+<a href="/">
+    <?php
+        $lightModeStyle = 'display: block;';
+        $darkModeStyle = 'display: none;';
+    ?>
+
+    <style>
+        html.dark .logo-light-mode { display: none; }
+        html.dark .logo-dark-mode { display: block; }
+    </style>
+
+    <!-- Logo für Light Mode -->
+    <img <?php echo e($attributes->merge(['class' => 'logo-light-mode rounded-md border-2 border-primary'])); ?>
+
+         src="<?php echo e(asset('images/logo_light.webp')); ?>" 
+         alt="Costify3D Logo"
+         style="<?php echo e($lightModeStyle); ?>">
+
+    <!-- Logo für Dark Mode -->
+    <img <?php echo e($attributes->merge(['class' => 'logo-dark-mode rounded-md border-2 border-primary'])); ?>
+
+         src="<?php echo e(asset('images/logo_dark.webp')); ?>" 
+         alt="Costify3D Logo"
+         style="<?php echo e($darkModeStyle); ?>">
+</a><?php /**PATH C:\laragon\www\costify3d\resources\views/components/logo.blade.php ENDPATH**/ ?>
