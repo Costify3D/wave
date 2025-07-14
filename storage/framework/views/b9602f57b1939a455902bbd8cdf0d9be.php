@@ -1,0 +1,1 @@
+<p>new btns</p><?php /**PATH C:\laragon\www\costify3d\resources\views\components\button-s.blade.php ENDPATH**/ ?>

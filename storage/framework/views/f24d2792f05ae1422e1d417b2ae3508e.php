@@ -1,0 +1,1 @@
+<p class="mx-auto mt-4 max-w-2xl text-base font-medium text-center text-zinc-500 text-balance"><?php echo e($slot); ?></p><?php /**PATH C:\laragon\www\costify3d\resources\themes\Costify3D\components\elements\heading-description.blade.php ENDPATH**/ ?>

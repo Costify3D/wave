@@ -1,0 +1,40 @@
+<?php $attributes ??= new \Illuminate\View\ComponentAttributeBag;
+
+$__newAttributes = [];
+$__propNames = \Illuminate\View\ComponentAttributeBag::extractPropNames(([
+    'for' => ''
+]));
+
+foreach ($attributes->all() as $__key => $__value) {
+    if (in_array($__key, $__propNames)) {
+        $$__key = $$__key ?? $__value;
+    } else {
+        $__newAttributes[$__key] = $__value;
+    }
+}
+
+$attributes = new \Illuminate\View\ComponentAttributeBag($__newAttributes);
+
+unset($__propNames);
+unset($__newAttributes);
+
+foreach (array_filter(([
+    'for' => ''
+]), 'is_string', ARRAY_FILTER_USE_KEY) as $__key => $__value) {
+    $$__key = $$__key ?? $__value;
+}
+
+$__defined_vars = get_defined_vars();
+
+foreach ($attributes->all() as $__key => $__value) {
+    if (array_key_exists($__key, $__defined_vars)) unset($$__key);
+}
+
+unset($__defined_vars); ?>
+
+<label for="<?php echo e($for); ?>" <?php echo e($attributes->merge(['class' => 'fi-fo-field-wrp-label inline-flex items-center gap-x-3 mb-2'])); ?>>
+    <span class="text-sm font-medium leading-6 text-gray-950 dark:text-white">
+        <?php echo e($slot); ?>
+
+    </span>
+</label><?php /**PATH C:\laragon\www\costify3d\wave\resources\views\admin\components\label.blade.php ENDPATH**/ ?>

@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Wave\Category;
+use App\Mail\NewsletterMail;
 use Wave\Post;
 
 class PostResource extends Resource

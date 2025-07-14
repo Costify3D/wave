@@ -40,6 +40,18 @@ class User extends WaveUser
         'remember_token',
     ];
 
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'password' => 'hashed',
+        'trial_ends_at' => 'datetime',
+    ];
+
+
     protected static function boot()
     {
         parent::boot();
