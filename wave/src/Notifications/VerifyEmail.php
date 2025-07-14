@@ -39,12 +39,15 @@ class VerifyEmail extends Notification
      */
     public function toMail($notifiable): MailMessage
     {
+        app()->setLocale($this->user->language ?? 'de');
         $url = url('/user/verify/'.$this->user->verification_code);
 
         return (new MailMessage)
-            ->line('Thanks for signing up, but before you can continue we need to verify your email.')
-            ->action('Verify Email', $url)
-            ->line('Thanks! See you soon.');
+            ->subject(__('verify_mail.subject'))
+            ->greeting(__('verify_mail.headline'))
+            ->line(__('verify_mail.body'))
+            ->action(__('verify_mail.button'), $url)
+            ->line(__('verify_mail.footer'));
 
     }
 
