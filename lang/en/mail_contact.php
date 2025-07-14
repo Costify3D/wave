@@ -10,5 +10,7 @@ return [
     'contact_phone' => 'Email address',
     'contact_email' => 'Mobile number',
     'contact_message' => 'Your message to our team',
+    'contact_label_attachment' => 'File attachment (optional)',
+    'contact_attachment_hint' => 'Maximum file :size MB. Allowed formats: PDF, DOCX, JPG, PNG.',
 
 ];

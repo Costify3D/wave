@@ -62,6 +62,16 @@ class ContactFormMail extends Mailable
      */
     public function attachments(): array
     {
+        // Wenn ein Anhang im $data-Array vorhanden ist, hängen wir ihn an.
+        if (isset($this->data['attachment'])) {
+            return [
+                Attachment::fromPath($this->data['attachment']->getRealPath())
+                    ->as($this->data['attachment']->getClientOriginalName())
+                    ->withMime($this->data['attachment']->getClientMimeType()),
+            ];
+        }
+
+        // Andernfalls geben wir ein leeres Array zurück.
         return [];
     }
 }

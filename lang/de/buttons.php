@@ -13,5 +13,6 @@ return [
 
     //conatct formmular
     'contact_submit' => 'Nachricht senden',
+    'contact_attachment' => 'Datei anhängen',
 
 ];

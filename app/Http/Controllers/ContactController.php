@@ -15,7 +15,14 @@ class ContactController extends Controller
             'phone' => 'nullable|string|max:80',
             'email' => 'required|email|max:255',
             'message' => 'required|string',
+            'attachment' => 'nullable|file|max:20480',
         ]);
+
+        // LOGIK FÜR DEN DATEIUPLOAD
+        if ($request->hasFile('attachment')) {
+            // Wir speichern den Dateipfad im $data-Array, um ihn an die Mail zu übergeben
+            $data['attachment'] = $request->file('attachment');
+        }
 
         // Senden der E-Mail
         Mail::send(new ContactFormMail($data));

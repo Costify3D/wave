@@ -32,7 +32,7 @@
                 </div>
             <?php endif; ?>
 
-            <form action="<?php echo e(route('contact.send')); ?>" method="POST" class="mt-10 space-y-8">
+            <form action="<?php echo e(route('contact.send')); ?>" method="POST" class="mt-10 space-y-8" enctype="multipart/form-data">
                 <?php echo csrf_field(); ?>
                 
                 <div>
@@ -53,6 +53,17 @@
                 <div>
                     <label for="message" class="form-label"><?php echo e(__('mail_contact.contact_message')); ?></label>
                     <textarea name="message" id="message" rows="5" class="form-textarea" required></textarea>
+                </div>
+
+                <div>
+                    <label for="attachment" class="form-label"><?php echo e(__('mail_contact.contact_label_attachment')); ?></label>
+                    <input 
+                        type="file" 
+                        name="attachment" 
+                        id="attachment"
+                        class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none"
+                    >
+                    <p class="mt-1 text-xs text-gray-500"><?php echo e(__('mail_contact.contact_attachment_hint', ['size' => 20])); ?></p>
                 </div>
 
                 <div>
