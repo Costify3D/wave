@@ -1,4 +1,4 @@
-<section id="features">
+<section id="features" class="scroll-mt-40">
     <?php if (isset($component)) { $__componentOriginale1ab5bbebb00493b37a64682853d7e7d = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginale1ab5bbebb00493b37a64682853d7e7d = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => '1929d69541870f736d4a47ee2f87330b::marketing.elements.heading','data' => ['level' => 'h2','title' => 'Costify3D: Clarity in every layer.','description' => 'Plan. Print. Profit. From idea to invoice – manage your entire 3D printing workflow in one place, start today!']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>

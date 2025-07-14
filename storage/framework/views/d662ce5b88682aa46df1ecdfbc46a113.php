@@ -1,14 +1,14 @@
 <section>
     <?php if (isset($component)) { $__componentOriginale1ab5bbebb00493b37a64682853d7e7d = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginale1ab5bbebb00493b37a64682853d7e7d = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => '1929d69541870f736d4a47ee2f87330b::marketing.elements.heading','data' => ['level' => 'h2','title' => 'Chart Your Course','description' => 'Set sail and discover the riches of our value-packed plans, meticulously designed to offer you the very best features for less on your SaaS expedition. ']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => '1929d69541870f736d4a47ee2f87330b::marketing.elements.heading','data' => ['level' => 'h2','title' => 'Choose your perfect plan','description' => 'Compare the options. We offer the following rates:']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('marketing.elements.heading'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['level' => 'h2','title' => 'Chart Your Course','description' => 'Set sail and discover the riches of our value-packed plans, meticulously designed to offer you the very best features for less on your SaaS expedition. ']); ?>
+<?php $component->withAttributes(['level' => 'h2','title' => 'Choose your perfect plan','description' => 'Compare the options. We offer the following rates:']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginale1ab5bbebb00493b37a64682853d7e7d)): ?>
@@ -124,5 +124,5 @@
         </div>
     </div>
 
-    <p class="w-full mt-0 mb-8 text-center text-zinc-500 sm:my-10">All plans are fully configurable in the Admin Area.</p>
+    <p class="w-full mt-0 mb-8 text-center text-zinc-500 sm:my-10">All plans are subject to change.</p>
 </section><?php /**PATH C:\laragon\www\costify3d\resources\themes/Costify3D/components/marketing/sections/pricing.blade.php ENDPATH**/ ?>

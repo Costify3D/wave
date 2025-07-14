@@ -2,6 +2,9 @@
     if(isset($seo)){
         $seo = (is_array($seo)) ? ((object)$seo) : $seo;
     }
+
+    // Wir holen uns den Namen des aktiven Themes aus der theme.json, genau wie es Vite und Tailwind tun
+    $theme = json_decode(file_get_contents(base_path('theme.json')));
 ?>
 <?php if(isset($seo->title)): ?>
     <title><?php echo e($seo->title); ?></title>
@@ -35,6 +38,14 @@
 <?php unset($__componentOriginal82e3f864bb766fbb95cb0a10b750823c); ?>
 <?php endif; ?>
 
+<!-- ============================================ -->
+<!--            GLOBALE SCHRIFTARTEN              -->
+<!-- ============================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Saira:wght@400;500;600&display=swap" rel="stylesheet">
+
+
 
 <?php if(isset($seo->title) && isset($seo->description) && isset($seo->image)): ?>
     <meta property="og:title" content="<?php echo e($seo->title); ?>">
@@ -64,10 +75,4 @@
 <?php echo \Filament\Support\Facades\FilamentAsset::renderStyles() ?>
 <?php echo \Livewire\Mechanisms\FrontendAssets\FrontendAssets::styles(); ?>
 
-
-
-<?php
-    // Wir holen uns den Namen des aktiven Themes aus der theme.json, genau wie es Vite und Tailwind tun
-    $theme = json_decode(file_get_contents(base_path('theme.json')));
-?>
 <?php echo app('Illuminate\Foundation\Vite')(['resources/themes/' . $theme->name . '/assets/css/app.css', 'resources/themes/' . $theme->name . '/assets/js/app.js']); ?><?php /**PATH C:\laragon\www\costify3d\resources\themes/Costify3D/partials/head.blade.php ENDPATH**/ ?>

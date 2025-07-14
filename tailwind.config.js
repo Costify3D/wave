@@ -27,6 +27,20 @@ export default {
 
     theme: {
         extend: {
+            // Farben
+            colors: {
+                primary: {
+                    '500': '#f28c28', // CI-Main-Color
+                },
+            },
+
+            // Schriftfamilien
+            fontFamily: {
+                // 'sans' wird unsere neue Standard-Schrift für den Fließtext
+                'sans': ['Saira', ...defaultTheme.fontFamily.sans],
+                // 'heading' ist unsere neue Schrift für Überschriften
+                'heading': ['Goldman', 'cursive'],
+            },
             animation: {
                 'marquee': 'marquee 25s linear infinite',
             },
@@ -36,7 +50,14 @@ export default {
                     to: { transform: 'translateX(-100%)' },
                 }
                 
-            } 
+            },
+            fontSize: {
+                // HIER IST DIE MAGIE: Wir definieren 'text-2xl' neu
+                '2xl': ['1.5rem', { // 1.5rem ist die Standardgröße für 2xl
+                  lineHeight: '2rem',
+                  letterSpacing: '0.025em', // Entspricht ca. 'tracking-wide'
+                }],
+            },
         },
     },
 

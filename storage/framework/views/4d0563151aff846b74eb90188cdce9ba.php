@@ -3,8 +3,8 @@
         <div class="flex flex-col items-center justify-between flex-1 w-full max-w-2xl gap-6 px-8 pt-32 mx-auto text-left md:px-12 xl:px-20 lg:pt-32 lg:pb-16 lg:max-w-7xl lg:flex-row">
             <div class="w-full lg:w-1/2">
                 <h1 class="text-6xl font-bold tracking-tighter text-left sm:text-7xl md:text-8xl sm:text-center lg:text-left text-zinc-900 text-balance">
-                    <span class="block origin-left lg:scale-90 text-nowrap">Costify 3D</span> <span class="pr-4 text-transparent text-neutral-600 bg-clip-text bg-gradient-to-b from-neutral-900 to-neutral-500">nano ERP System</span>
-                </h1>
+                    <span class="block origin-left lg:scale-90 text-nowrap text-primary-500"style="filter: drop-shadow(0 0 0.35rem rgba(242, 140, 40, 0.4));">Costify 3D</span>
+                    <span class="pr-4 text-transparent text-neutral-600 bg-clip-text bg-gradient-to-b from-neutral-900 to-neutral-500">nano ERP System</span>
                 <p class="mx-auto mt-5 text-2xl font-normal text-left sm:max-w-md lg:ml-0 lg:max-w-md sm:text-center lg:text-left text-zinc-500">
                     Do you love 3D printing, but pricing is a nightmare?<span class="hidden sm:inline"> Costify3D is the first calculator that truly takes all costs into your account.</span>
                 </p>
