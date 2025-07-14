@@ -8,9 +8,17 @@
 | Diese Routen werden vom RouteServiceProvider geladen.
 |
 */
+use App\Http\Controllers\ContactController;
 
 // ===================================================================
-//            HIER IST UNSERE NEUE SPRACHUMSCHALTER-ROUTE
+//            Kontakt-Mail-ROUTE
+// ===================================================================
+Route::post('contact-send', [ContactController::class, 'send'])->name('contact.send');
+
+
+
+// ===================================================================
+//           SPRACHUMSCHALTER-ROUTE
 // ===================================================================
 // Wir verwenden hier die Helfer-Funktionen, das ist noch sauberer.
 Route::get('locale/{locale}', function ($locale) {
