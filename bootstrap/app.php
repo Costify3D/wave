@@ -33,7 +33,16 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->append(\Filament\Http\Middleware\DisableBladeIconComponents::class);
 
-        $middleware->web(\RalphJSmit\Livewire\Urls\Middleware\LivewireUrlsMiddleware::class);
+        // ===================================================================
+        //            HIER IST DIE ÄNDERUNG
+        // ===================================================================
+        // Wir fügen unsere SetLocale Middleware zur Web-Gruppe hinzu.
+        // Die bereits vorhandene Middleware wird einfach als weiteres Argument übergeben.
+        $middleware->web([
+            \RalphJSmit\Livewire\Urls\Middleware\LivewireUrlsMiddleware::class,
+            \App\Http\Middleware\SetLocale::class,
+        ]);
+
 
         $middleware->throttleApi();
     })

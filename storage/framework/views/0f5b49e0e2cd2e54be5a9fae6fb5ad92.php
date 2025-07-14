@@ -1,4 +1,3 @@
-
 <!-- Section 1 -->
 <footer class="pt-10">
     <?php if (isset($component)) { $__componentOriginala766c2d312d6f7864fe218e2500d2bba = $component; } ?>
@@ -12,7 +11,7 @@
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
         <div class="flex flex-wrap items-start justify-between pb-20">
-            <a href="#_" class="flex items-center w-auto mt-1 text-lg font-bold transition-all duration-300 ease-out brightness-0 md:w-1/6 hover:brightness-100">
+            <a href="<?php echo e(route('home')); ?>" class="flex items-center w-auto mt-1 text-lg font-bold transition-all duration-300 ease-out brightness-0 md:w-1/6 hover:brightness-100">
                 <?php if (isset($component)) { $__componentOriginal987d96ec78ed1cf75b349e2e5981978f = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal987d96ec78ed1cf75b349e2e5981978f = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.logo','data' => ['class' => 'flex-shrink-0 w-auto h-8']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -35,123 +34,123 @@
             </a>
             <div class="grid w-full grid-cols-2 pt-2 mt-20 gap-y-16 sm:grid-cols-4 lg:gap-x-8 md:w-5/6 md:mt-0 md:pr-6">
                 <div class="md:justify-self-end">
-                    <h3 class="font-semibold text-black">Product</h3>
+                    <h3 class="font-semibold text-black"><?php echo e(__('footer.product_title')); ?></h3>
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
-                            <a href="#_" class="relative inline-block text-black group">
+                            <a href="<?php echo e(route('home')); ?>#features" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Features</span>
+                                <span><?php echo e(__('footer.product_features')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Integrations</span>
+                                <span><?php echo e(__('footer.product_integrations')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Documentation</span>
+                                <span><?php echo e(__('footer.product_documentation')); ?></span>
                             </a>
                         </li>
                         <li>
-                            <a href="#_" class="relative inline-block text-black group">
+                            <a href="<?php echo e(route('pricing')); ?>" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Pricing</span>
+                                <span><?php echo e(__('footer.product_pricing')); ?></span>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="md:justify-self-end">
-                    <h3 class="font-semibold text-black">About</h3>
+                    <h3 class="font-semibold text-black"><?php echo e(__('footer.about_title')); ?></h3>
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Our Story</span>
+                                <span><?php echo e(__('footer.about_story')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Company</span>
+                                <span><?php echo e(__('footer.about_company')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Our Team</span>
+                                <span><?php echo e(__('footer.about_team')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Work With Us</span>
+                                <span><?php echo e(__('footer.about_work')); ?></span>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="md:justify-self-end">
-                    <h3 class="font-semibold text-black">Resources</h3>
+                    <h3 class="font-semibold text-black"><?php echo e(__('footer.resources_title')); ?></h3>
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Help Center</span>
+                                <span><?php echo e(__('footer.resources_help')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Developer API</span>
+                                <span><?php echo e(__('footer.resources_api')); ?></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo e(route('blog')); ?>" class="relative inline-block text-black group">
+                                <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
+                                <span><?php echo e(__('footer.resources_blog')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Our Blog</span>
+                                <span><?php echo e(__('footer.resources_status')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Status</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#_" class="relative inline-block text-black group">
-                                <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Sitemap</span>
+                                <span><?php echo e(__('footer.resources_sitemap')); ?></span>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="md:justify-self-end">
-                    <h3 class="font-semibold text-black">Contact</h3>
+                    <h3 class="font-semibold text-black"><?php echo e(__('footer.contact_title')); ?></h3>
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Advertising</span>
+                                <span><?php echo e(__('footer.contact_advertising')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Press</span>
+                                <span><?php echo e(__('footer.contact_press')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Partners</span>
+                                <span><?php echo e(__('footer.contact_partners')); ?></span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="relative inline-block text-black group">
                                 <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-1"></span>
-                                <span>Email</span>
+                                <span><?php echo e(__('footer.contact_email')); ?></span>
                             </a>
                         </li>
                     </ul>
@@ -161,28 +160,29 @@
 
         <div class="flex flex-col items-center justify-between py-10 border-t border-solid lg:flex-row border-gray">
             <ul class="flex flex-wrap space-x-5 text-xs">
-                <li class="mb-6 text-center flex-full lg:flex-none lg:mb-0">&copy; <?php echo e(date('Y')); ?> <?php echo e(setting('site.title', 'Laravel Wave')); ?>, Inc. All rights reserved.</li>
+                <li class="mb-6 text-center flex-full lg:flex-none lg:mb-0"><?php echo e(__('footer.copyright', ['year' => date('Y'), 'site_name' => setting('site.title', 'Costify3D, Inc.')])); ?></li>
                 <li class="lg:ml-6">
                     <a href="#_" class="relative inline-block text-black group">
                         <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-0"></span>
-                        <span>Privacy Policy</span>
+                        <span><?php echo e(__('footer.privacy_policy')); ?></span>
                     </a>
                 </li>
                 <li class="ml-auto mr-auto text-center lg:ml-6 lg:mr-0">
                     <a href="#_" class="relative inline-block text-black group">
                         <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-0"></span>
-                        <span>Disclaimers</span>
+                        <span><?php echo e(__('footer.disclaimers')); ?></span>
                     </a>
                 </li>
                 <li class="lg:ml-6">
                     <a href="#_" class="relative inline-block text-black group">
                         <span class="absolute bottom-0 w-full transition duration-150 ease-out transform -translate-y-1 border-b border-black opacity-0 group-hover:opacity-100 group-hover:translate-y-0"></span>
-                        <span>Terms and Conditions</span>
+                        <span><?php echo e(__('footer.terms_conditions')); ?></span>
                     </a>
                 </li>
             </ul>
 
             <ul class="flex items-center mt-10 space-x-5 lg:mt-0">
+                
                 <li>
                     <a href="#" class="text-zinc-600 hover:text-zinc-900">
                         <span class="sr-only">Facebook</span>
@@ -235,5 +235,4 @@
 <?php $component = $__componentOriginala766c2d312d6f7864fe218e2500d2bba; ?>
 <?php unset($__componentOriginala766c2d312d6f7864fe218e2500d2bba); ?>
 <?php endif; ?>
-</footer>
-<?php /**PATH C:\laragon\www\costify3d\resources\themes/Costify3D/partials/footer.blade.php ENDPATH**/ ?>
+</footer><?php /**PATH C:\laragon\www\costify3d\resources\themes/Costify3D/partials/footer.blade.php ENDPATH**/ ?>

@@ -5,6 +5,10 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\PlanResource\Pages;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
+// Wir importieren die übersetzbaren Komponenten direkt
+use Filament\Forms\Components\SpatieTranslatableTextarea;
+use Filament\Forms\Components\SpatieTranslatableTextInput;
+use Filament\Forms\Components\SpatieTranslatableTagsInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -27,16 +31,16 @@ class PlanResource extends Resource
                 Section::make('Plan Details')
                     ->description('Below are the basic details for each plan including name, description, and features')
                     ->schema([
-                        Forms\Components\TextInput::make('name')
+                        Forms\Components\TextInput::make('name') // Zurück zu TextInput
                             ->required()
                             ->maxLength(191)
                             ->columnSpan(2),
-                        Forms\Components\Textarea::make('description')
+                        Forms\Components\Textarea::make('description') // Zurück zu Textarea
                             ->columnSpan([
                                 'default' => 2,
                                 'lg' => 1,
                             ]),
-                        Forms\Components\TagsInput::make('features')
+                        Forms\Components\TagsInput::make('features') // Zurück zu TagsInput
                             ->reorderable()
                             ->separator(',')
                             ->placeholder('New feature')
@@ -93,8 +97,7 @@ class PlanResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('role_id')
-                    ->numeric()
+                Tables\Columns\TextColumn::make('role.name') // Kleine Verbesserung: Zeigt den Rollennamen statt der ID an
                     ->sortable(),
                 Tables\Columns\BooleanColumn::make('active')
                     ->sortable(),

@@ -182,6 +182,32 @@
                         <a href="<?php echo e(route('blog')); ?>" class="flex items-center h-full text-sm font-semibold text-gray-700 transition duration-300 md:px-0 px-7 hover:bg-gray-100 md:hover:bg-transparent hover:text-gray-900">Blog</a>
                     </li>
 
+                    <!-- ============================================ -->
+                    <!--         Language Switch                      -->
+                    <!-- ============================================ -->
+                    <li class="flex-shrink-0 h-16 border-b border-gray-100 md:border-b-0 md:h-full md:flex md:items-center">
+                        <?php if (isset($component)) { $__componentOriginal8d3bff7d7383a45350f7495fc470d934 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8d3bff7d7383a45350f7495fc470d934 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => '1929d69541870f736d4a47ee2f87330b::language-switcher','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('language-switcher'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal8d3bff7d7383a45350f7495fc470d934)): ?>
+<?php $attributes = $__attributesOriginal8d3bff7d7383a45350f7495fc470d934; ?>
+<?php unset($__attributesOriginal8d3bff7d7383a45350f7495fc470d934); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8d3bff7d7383a45350f7495fc470d934)): ?>
+<?php $component = $__componentOriginal8d3bff7d7383a45350f7495fc470d934; ?>
+<?php unset($__componentOriginal8d3bff7d7383a45350f7495fc470d934); ?>
+<?php endif; ?>
+                    </li>
+
                     <?php if(auth()->guard()->guest()): ?>
                         <li class="relative z-30 flex flex-col items-center justify-center flex-shrink-0 w-full h-auto pt-3 space-y-3 text-sm md:hidden px-7">
                             <?php if (isset($component)) { $__componentOriginald0f1fd2689e4bb7060122a5b91fe8561 = $component; } ?>

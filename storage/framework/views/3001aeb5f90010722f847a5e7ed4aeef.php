@@ -1,14 +1,14 @@
 <section class="w-full">
     <?php if (isset($component)) { $__componentOriginale1ab5bbebb00493b37a64682853d7e7d = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginale1ab5bbebb00493b37a64682853d7e7d = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => '1929d69541870f736d4a47ee2f87330b::marketing.elements.heading','data' => ['level' => 'h2','title' => 'User Voices','description' => 'Find out what our users say about Costify 3D,<br> through their own thoughts, words and success stories.']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => '1929d69541870f736d4a47ee2f87330b::marketing.elements.heading','data' => ['level' => 'h2','title' => ''.e(__('landingpage.testimonials_title')).'','description' => ''.e(__('landingpage.testimonials_title_description')).'']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('marketing.elements.heading'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['level' => 'h2','title' => 'User Voices','description' => 'Find out what our users say about Costify 3D,<br> through their own thoughts, words and success stories.']); ?>
+<?php $component->withAttributes(['level' => 'h2','title' => ''.e(__('landingpage.testimonials_title')).'','description' => ''.e(__('landingpage.testimonials_title_description')).'']); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginale1ab5bbebb00493b37a64682853d7e7d)): ?>
@@ -23,9 +23,7 @@
         <li>
             <figure class="flex flex-col justify-between h-full">
                 <blockquote class="">
-                    <p class="text-sm sm:text-base font-medium text-zinc-500">
-                        Since we started using Costify3D to plan our production, we have been using our printers much more efficiently.
-                    </p>
+                    <p class="text-sm sm:text-base font-medium text-zinc-500"><?php echo e(__('landingpage.testimonials_text1')); ?></p>
                 </blockquote>
                 <figcaption class="flex flex-col justify-between mt-6">
                     <img alt="#_" src="https://cdn.devdojo.com/images/june2024/adam.jpeg" class="object-cover rounded-full grayscale size-14">
@@ -41,9 +39,7 @@
         <li>
             <figure class="flex flex-col justify-between h-full">
                 <blockquote class="">
-                    <p class="text-sm sm:text-base font-medium text-zinc-500">
-                        We never knew what we had in stock before, and as a result, we often lost a lot of time in production waiting for goods. Those days are now over.
-                    </p>
+                    <p class="text-sm sm:text-base font-medium text-zinc-500"><?php echo e(__('landingpage.testimonials_text2')); ?></p>
                 </blockquote>
                 <figcaption class="flex flex-col justify-between mt-6">
                     <img alt="#_" src="https://cdn.devdojo.com/images/june2024/caleb.jpeg" class="object-cover rounded-full grayscale size-14">
@@ -59,9 +55,7 @@
         <li>
             <figure class="flex flex-col justify-between h-full">
                 <blockquote class="">
-                    <p class="text-sm sm:text-base font-medium text-zinc-500">
-                        Previously, we used five software programs to manage our business, now we only use Costify 3D. Wonderfully simple and fast.
-                    </p>
+                    <p class="text-sm sm:text-base font-medium text-zinc-500"><?php echo e(__('landingpage.testimonials_text3')); ?></p>
                 </blockquote>
                 <figcaption class="flex flex-col justify-between mt-6">
                     <img alt="#_" src="https://cdn.devdojo.com/images/june2024/taylor.jpeg" class="object-cover rounded-full grayscale size-14">
