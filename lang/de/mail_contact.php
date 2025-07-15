@@ -11,6 +11,6 @@ return [
     'contact_email' => 'Mobilnummer',
     'contact_message'  => 'Ihre Nachricht an unser Team',
     'contact_label_attachment' => 'Dateianhang (optional)',
-    'contact_attachment_hint' => 'Maximale Dateigröße: 20 MB. Erlaubte Formate: PDF, DOCX, JPG, PNG.',
+    'contact_attachment_hint' => 'Maximale Dateigröße: :size MB. Erlaubte Formate: PDF, DOCX, JPG, PNG.',
     
 ];

@@ -52,6 +52,8 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('verification_code')
                     ->maxLength(191),
                 Forms\Components\Toggle::make('verified'),
+                Forms\Components\Toggle::make('newsletter_subscribed')->label('Subscribed to Newsletter'),
+                
             ]);
     }
 

@@ -9,11 +9,18 @@
 |
 */
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsletterController;
 
 // ===================================================================
 //            Kontakt-Mail-ROUTE
 // ===================================================================
 Route::post('contact-send', [ContactController::class, 'send'])->name('contact.send');
+
+// Diese Route zeigt die Abmeldeseite an
+Route::get('/newsletter/unsubscribe/{user}/{token}', [NewsletterController::class, 'showUnsubscribeForm'])->name('newsletter.unsubscribe');
+
+// Diese Route verarbeitet die Formulardaten
+Route::post('/newsletter/unsubscribe', [NewsletterController::class, 'processUnsubscribe'])->name('newsletter.process_unsubscribe');
 
 
 

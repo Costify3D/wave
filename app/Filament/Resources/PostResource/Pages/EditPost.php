@@ -9,16 +9,17 @@ use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\NewsletterMail;
 use Wave\Post;
+// HINZUGEFÜGT: Wird für die Erfolgs- und Warnmeldungen benötigt
+use Filament\Notifications\Notification;
 
 class EditPost extends EditRecord
 {
     protected static string $resource = PostResource::class;
 
-    // Diese Methode wird HINZUGEFÜGT oder ERSETZT, falls sie schon existiert.
     protected function getHeaderActions(): array
     {
         return [
-            // Dies ist unsere neue "Senden"-Aktion
+            // Dies ist unsere "Senden"-Aktion
             Actions\Action::make('sendNewsletter')
                 ->label('Send as Newsletter')
                 ->color('success')
@@ -26,26 +27,33 @@ class EditPost extends EditRecord
                 ->requiresConfirmation() // Fragt nach Bestätigung
                 ->action(function (Post $record) {
                     
-                    // Wir holen alle User, deren E-Mail verifiziert ist
-                    $users = User::where('verified', true)->get();
+                    // ===================================================================
+                    //            HIER IST DIE KORRIGIERTE ABFRAGE
+                    // ===================================================================
+                    $users = User::where('verified', true)
+                                ->where('newsletter_subscribed', true) // Prüft auf den boolean 'true' Wert
+                                ->get();
 
                     // Wenn keine User gefunden werden, geben wir eine Meldung aus
                     if ($users->isEmpty()) {
-                        \Filament\Notifications\Notification::make()
-                            ->title('No verified users found')
+                        Notification::make()
+                            ->title('No subscribed users found') // Angepasste Nachricht
                             ->warning()
                             ->send();
                         return; // Beendet die Aktion
                     }
 
-                    // Wir senden die E-Mail an jeden gefundenen User
+                    // ===================================================================
+                    //            HIER IST DIE ANGEPASSTE VERSANDLOGIK
+                    // ===================================================================
                     foreach ($users as $user) {
-                        Mail::to($user)->send(new NewsletterMail($record));
+                        // Wir übergeben jetzt den Post ($record) UND den User ($user)
+                        Mail::to($user)->send(new NewsletterMail($record, $user));
                     }
 
                     // Erfolgsmeldung
-                    \Filament\Notifications\Notification::make()
-                        ->title('Newsletter sent successfully to ' . $users->count() . ' users.')
+                    Notification::make()
+                        ->title('Newsletter sent successfully to ' . $users->count() . ' subscribers.') // Angepasste Nachricht
                         ->success()
                         ->send();
                 }),
