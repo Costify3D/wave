@@ -11,6 +11,7 @@ return [
         'no_longer_interested' => 'I am no longer interested.',
         'prefer_other_channels' => 'I prefer to get updates through other channels.',
         'other' => 'Other',
+        'other_text' => 'Please specify (optional)',
     ],
     'reasons_other_text' => 'Please specify (optional)',
     'unsubscribe_success' => 'You have been successfully unsubscribed. Thank you for your feedback.',

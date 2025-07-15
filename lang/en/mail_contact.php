@@ -15,6 +15,6 @@ return [
     'read_on_website' => 'Read on our Website',
     'all_rights_reserved' => 'All rights reserved',
     'unsubscribe' => 'If you no longer wish to receive these emails, you can',
-    'unsubscribe_here' => 'unsubscribe here',
+    'unsubscribe here' => 'unsubscribe here',
 
 ];

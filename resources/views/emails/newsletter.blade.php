@@ -16,14 +16,9 @@ Thanks,<br>
 {{-- ========================================================== --}}
 {{--                        ABMELDE-FOOTER                      --}}
 {{-- ========================================================== --}}
-@slot('footer')
-<x-mail::footer>
-© {{ date('Y') }} {{ config('app.name') }}. @lang('mail_contact.all_rights_reserved')
 
-<p style="text-align: center; margin-top: 10px;">
-    @lang('mail_contact.unsubscribe') <a href="{{ $user->unsubscribeUrl() }}">@lang('mail_contact_unsubscribe here')</a>.
+<p style="text-align: center; color: #718096; font-size: 12px; line-height: 1.5;">
+    @lang('mail_contact.unsubscribe') <a href="{{ $user->unsubscribeUrl() }}" style="color: #3b82f6;">@lang('mail_contact.unsubscribe here')</a>.
 </p>
-</x-mail::footer>
-@endslot
 
 </x-mail::message>

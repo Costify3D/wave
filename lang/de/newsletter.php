@@ -11,9 +11,11 @@ return [
         'no_longer_interested' => 'Ich habe kein Interesse mehr.',
         'prefer_other_channels' => 'Ich bevorzuge Updates über andere Kanäle.',
         'other' => 'Sonstiges',
+        'other_text' => 'Bitte angeben (optional)',
     ],
     'reasons_other_text' => 'Bitte angeben (optional)',
     'unsubscribe_success' => 'Sie wurden erfolgreich vom Newsletter abgemeldet. Vielen Dank für Ihr Feedback.',
     'unsubscribe_error_email' => 'Die angegebene E-Mail-Adresse stimmt nicht mit unseren Daten überein.',
     'unsubscribe_error_invalid' => 'Dieser Abmeldelink ist ungültig oder abgelaufen.',
+    
 ];

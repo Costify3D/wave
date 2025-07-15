@@ -15,6 +15,6 @@ return [
     'read_on_website' => 'Lesen Sie den Beitrag auf unserer Website',
     'all_rights_reserved' => 'Alle Rechte vorbehalten',
     'unsubscribe' => 'Wenn Sie diese E-Mails nicht mehr erhalten möchten, können Sie',
-    'unsubscribe_here' => 'hier abbestellen',
+    'unsubscribe here' => 'hier abbestellen',
     
 ];

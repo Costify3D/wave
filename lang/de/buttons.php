@@ -2,6 +2,10 @@
 
 return [
 
+    // Main Buttons
+    'cancel' => 'Abbrechen',
+    'save' => 'Speichern',
+
     //Register and Login
     'register'       => 'Registrieren',
     'show_features'  => 'Funktionen zeigen',
@@ -14,5 +18,8 @@ return [
     //conatct formmular
     'contact_submit' => 'Nachricht senden',
     'contact_attachment' => 'Datei anhängen',
+
+    //Newsletter
+    'unsubscribe_now' => 'Jetzt abmelden',
 
 ];

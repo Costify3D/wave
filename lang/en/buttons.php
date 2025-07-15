@@ -2,6 +2,10 @@
 
 return [
 
+    // Main Buttons
+    'cancel' => 'Cancel',
+    'save' => 'Save',
+
     //Register and Login
     'register' => 'Register',
     'show_features' => 'Show features',
@@ -14,5 +18,8 @@ return [
     //contact form
     'contact_submit' => 'Send message',
     'contact_attachment' => 'Attach file',
+
+    //Newsletter
+    'unsubscribe_now' => 'Unsubscribe now',
 
 ];
