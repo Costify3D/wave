@@ -12,5 +12,9 @@ return [
     'contact_message' => 'Your message to our team',
     'contact_label_attachment' => 'File attachment (optional)',
     'contact_attachment_hint' => 'Maximum file :size MB. Allowed formats: PDF, DOCX, JPG, PNG.',
+    'read_on_website' => 'Read on our Website',
+    'all_rights_reserved' => 'All rights reserved',
+    'unsubscribe' => 'If you no longer wish to receive these emails, you can',
+    'unsubscribe_here' => 'unsubscribe here',
 
 ];

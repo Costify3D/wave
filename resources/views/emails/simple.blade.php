@@ -13,14 +13,14 @@ Viele Grüße,<br>
 Ihr {{ config('app.name') }}-Team
 
 {{-- ========================================================== --}}
-{{--            Unsubsribe                                      --}}
+{{--                        ABMELDE-FOOTER                      --}}
 {{-- ========================================================== --}}
 @slot('footer')
 <x-mail::footer>
-© {{ date('Y') }} {{ config('app.name') }}. @lang('All rights reserved.')
+© {{ date('Y') }} {{ config('app.name') }}. @lang('mail_contact.all_rights_reserved')
 
 <p style="text-align: center; margin-top: 10px;">
-@lang('If you no longer wish to receive these emails, you can') <a href="{{ $user->unsubscribeUrl() }}">@lang('unsubscribe here')</a>.
+    @lang('mail_contact.unsubscribe') <a href="{{ $user->unsubscribeUrl() }}">@lang('mail_contact_unsubscribe here')</a>.
 </p>
 </x-mail::footer>
 @endslot

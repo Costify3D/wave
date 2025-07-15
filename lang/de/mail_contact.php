@@ -12,5 +12,9 @@ return [
     'contact_message'  => 'Ihre Nachricht an unser Team',
     'contact_label_attachment' => 'Dateianhang (optional)',
     'contact_attachment_hint' => 'Maximale Dateigröße: :size MB. Erlaubte Formate: PDF, DOCX, JPG, PNG.',
+    'read_on_website' => 'Lesen Sie den Beitrag auf unserer Website',
+    'all_rights_reserved' => 'Alle Rechte vorbehalten',
+    'unsubscribe' => 'Wenn Sie diese E-Mails nicht mehr erhalten möchten, können Sie',
+    'unsubscribe_here' => 'hier abbestellen',
     
 ];
